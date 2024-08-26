@@ -6,7 +6,7 @@ To achieve this goal, I used EfficientNet (B0 version) as the backbone model, ad
 
 The training was completed on my personal laptop, which is equipped with an Nvidia 1050 GTX.
 
-I deployed the project using **Flask Web Framework**.
+I deployed the project using **Flask Web Framework**. (A link for the deployment tutorial is provided in the resources section)
 
 **Key Concepts:** Deep Learning, Convolutional Neural Networks, Computer Vision, Multi-class Classification, Transfer Learning, Feature Extraction, Fine-tunning, EfficientNet. 
 
@@ -66,5 +66,6 @@ In conclusion, despite being trained for a significantly shorter time than the D
 - Deepfood paper: [DeepFood: Deep Learning-Based Food Image Recognition for Computer-Aided Dietary Assessment](https://arxiv.org/abs/1606.05675)
 - ULMFit approach: [Universal Language Model Fine-tuning for Text Classification](https://arxiv.org/abs/1801.06146)
 - TensorFlow for Deep Learning Bootcamp Course: [TensorFlow for Deep Learning Bootcamp | Udemy](https://www.udemy.com/course/tensorflow-developer-certificate-machine-learning-zero-to-mastery/?couponCode=24T6MT62024)
+- Deployment Tutorial: [Deploy Machine Learning Models using Flask](https://youtu.be/0nr6TPKlrN0?si=sXaa2Unorxr_wZ89)
 - [Image classification via fine-tuning with EfficientNet](https://keras.io/examples/vision/image_classification_efficientnet_fine_tuning/)
-
+ 
