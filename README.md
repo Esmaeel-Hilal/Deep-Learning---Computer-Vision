@@ -2,4 +2,4 @@
 This repository contain my computer vision projects using deep learning algorithms.
 
 ## Projects:
-1. Deep Learning for the Classification of Food Types - Completion date: 6/20/2024
+1. Enhancing Food Classification with Two-Stage Fine-Tuning in EfficientNet - Completion date: 8/26/2024
