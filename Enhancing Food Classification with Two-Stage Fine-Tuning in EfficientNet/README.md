@@ -6,6 +6,8 @@ To achieve this goal, I used EfficientNet (B0 version) as the backbone model, in
 
 The training was completed on my personal laptop, which is equipped with an Nvidia 1050 GTX.
 
+I deployed the project using **Flask web framework**.
+
 **Key Concepts:** Deep Learning, Convolutional Neural Networks, Computer Vision, Multi-class Classification, Transfer Learning, Fine-tunning, EfficientNet. 
 
 ## Data loading and preparation:
