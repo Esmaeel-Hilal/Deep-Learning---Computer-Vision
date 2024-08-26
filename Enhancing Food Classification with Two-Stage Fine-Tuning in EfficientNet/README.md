@@ -30,21 +30,24 @@ This adjustment was crucial. After applying these guidelines, my model surpassed
 - The model was saved using the checkpoint callback for future fine-tuning or model restoration.
 After training the model for only 15 epochs, which took about 2 hours, the model achieved an accuracy of 73.73% on the test set. 
 ### Stage 2 – transfer learning – fine-tuning:
-- EfficientNetB0's layers were unfrozen for fine-tuning (except the BatchNormalization layers). 
+EfficientNetB0's layers were unfrozen for fine-tuning (except the BatchNormalization layers). 
 After training the model for another 10 epochs, it took approximately 4 hours and 30 minutes. The model achieved an accuracy of 80.66% on the test set, surpassing the Deepfood model’s accuracy. 
 Mission accomplished!
-Analyzing the outcomes:
+
+## Analyzing the outcomes:
 - To evaluate the model’s results, I used the following metrics for each class:
     - Precision.
     - Recall.
     - F1-Score.
 - A confusion matrix was used to comprehensively analyze the model's predictions.
+
 After conducting further analysis, I identified the classes that were classified with high probability but were wrong. I used a Pandas data frame to arrange and sort the outcomes, aiming to explore why the model was confident that these images belonged to a certain class when they actually didn't. 
 Upon inspection, I discovered that these misclassified images were very similar in almost every aspect to the wrongly predicted class. It was difficult even for a human, including myself, to confidently classify these images.
+
 In conclusion, despite being trained for a significantly shorter time than the Deepfood model, my model produced better results. This serves as further evidence of the rapid evolution of deep learning, both in software and the hardware necessary for training. The Deepfood model was developed in 2016, while EfficientNetBX, the primary component of my model, was developed in 2020. The four-year gap between the development of these models played a significant role in the final results. Additionally, hardware advancements contributed to faster training. The total training time for my model took 6 hours and 30 minutes, compared to the 2-3 days required for training the Deepfood model.
 
-Useful links:
-- Food101 dataset: Food 101 (kaggle.com) 
+## Useful links:
+- Food101 dataset: [Food 101] (https://www.kaggle.com/datasets/dansbecker/food-101) 
 - EfficientNet paper: [EfficientNet: Rethinking Model Scaling for Convolutional Neural Networks](https://arxiv.org/abs/1905.11946)
 - Deepfood paper: [DeepFood: Deep Learning-Based Food Image Recognition for Computer-Aided Dietary Assessment](https://arxiv.org/abs/1606.05675)
 - ULMFit approach: [Universal Language Model Fine-tuning for Text Classification](https://arxiv.org/abs/1801.06146)
