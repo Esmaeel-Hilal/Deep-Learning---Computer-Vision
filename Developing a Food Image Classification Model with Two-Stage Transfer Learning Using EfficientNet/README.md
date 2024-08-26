@@ -8,7 +8,7 @@ The training was completed on my personal laptop, which is equipped with an Nvid
 
 I deployed the project using **Flask Web Framework**. (A link for the deployment tutorial is provided in the resources section)
 
-**Key Concepts:** Deep Learning, Convolutional Neural Networks, Computer Vision, Multi-class Classification, Transfer Learning, Feature Extraction, Fine-tunning, EfficientNet. 
+**Key Concepts:** Deep Learning, Convolutional Neural Networks, Computer Vision, Multi-class Classification, Transfer Learning, Feature Extraction, Fine-tuning, EfficientNet. 
 
 ## Data loading and preparation:
 After downloading and unzipping the dataset. I prepared the data for training by:
@@ -25,7 +25,7 @@ In this project, transfer learning was applied to enhance the model's performanc
 
 The Transfer Learning was performed in two steps: 
 1. Feature Extraction: by freezing the backbone model and training the entire model for 15 epochs.
-2. Fine-Tunning: by unfreezing the backbone and continuing training for 10 more epochs, following the approach proposed in the ULMFit paper.
+2. Fine-Tuning: by unfreezing the backbone and continuing training for 10 more epochs, following the approach proposed in the ULMFit paper.
 
 Note:
 Based on a Keras tutorial on Image Classification via Fine-Tuning with EfficientNet (link provided in the resources section):
