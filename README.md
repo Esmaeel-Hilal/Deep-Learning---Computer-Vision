@@ -2,4 +2,4 @@
 This repository contain my computer vision projects using deep learning algorithms.
 
 ## Projects:
-1. Enhancing Food Classification with Two-Stage Fine-Tuning in EfficientNet - Completion date: 8/26/2024
+1. Developing a Food Image Classification Model with Two-Stage Transfer Learning Using EfficientNet - Completion date: 8/26/2024

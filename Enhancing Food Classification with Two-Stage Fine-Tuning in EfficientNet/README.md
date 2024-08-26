@@ -1,4 +1,4 @@
-# Enhancing Food Classification with Two-Stage Transfer Learning Using EfficientNet
+# Developing a Food Image Classification Model with Two-Stage Transfer Learning Using EfficientNet
 I have finished this project as part of my journey to pursue my passion for AI. This project is the first milestone project in the “TensorFlow for Deep Learning Bootcamp” course on Udemy. While the course instructor offered guidance, I completed the project independently.
 
 The goal was to train a multiclass classification model that surpasses the Deepfood model. The Deepfood model used a convolutional neural network trained for **2-3 days and achieved a top-1 accuracy of 77.4%** on the food101 dataset.
@@ -6,7 +6,7 @@ To achieve this goal, I used EfficientNet (B0 version) as the backbone model, ad
 
 The training was completed on my personal laptop, which is equipped with an Nvidia 1050 GTX.
 
-I deployed the project using **Flask web framework**.
+I deployed the project using **Flask Web Framework**.
 
 **Key Concepts:** Deep Learning, Convolutional Neural Networks, Computer Vision, Multi-class Classification, Transfer Learning, Fine-tunning, EfficientNet. 
 
