@@ -2,9 +2,11 @@
 I have finished this project as part of my journey to pursue my passion for AI. This project is the first milestone project in the “TensorFlow for Deep Learning Bootcamp” course on Udemy. While the course instructor offered guidance, I completed the project independently.
 
 The goal was to train a multiclass classification model that surpasses the Deepfood model. The Deepfood model used a convolutional neural network trained for **2-3 days and achieved a top-1 accuracy of 77.4%** on the food101 dataset.
-To achieve this goal, I used EfficientNet (B0 version) as the backbone model, incorporated a global average pooling layer, batch normalization, and a dropout layer. I trained the model in two phases as described in the “Two-Stage Fine-Tuning” section and achieved a **top-1 accuracy of 80.66%**. The training process took approximately **6 hours and 30 minutes**. The training was completed on my personal laptop, which is equipped with an Nvidia 1050 GTX.
+To achieve this goal, I used EfficientNet (B0 version) as the backbone model, incorporated a global average pooling layer, batch normalization, and a dropout layer. I trained the model in two phases as described in the “Two-Stage Fine-Tuning” section and achieved a **top-1 accuracy of 80.66%**. The training process took approximately **6 hours and 30 minutes**. 
 
-Key Concepts: Deep Learning, Convolutional Neural Networks, Computer Vision, Multi-class Classification, Transfer Learning, Fine-tunning, EfficientNet. 
+The training was completed on my personal laptop, which is equipped with an Nvidia 1050 GTX.
+
+**Key Concepts:** Deep Learning, Convolutional Neural Networks, Computer Vision, Multi-class Classification, Transfer Learning, Fine-tunning, EfficientNet. 
 
 ## Data loading and preparation:
 After downloading and unzipping the dataset. I prepared the data for training by:
