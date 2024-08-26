@@ -8,7 +8,7 @@ The training was completed on my personal laptop, which is equipped with an Nvid
 
 I deployed the project using **Flask Web Framework**.
 
-**Key Concepts:** Deep Learning, Convolutional Neural Networks, Computer Vision, Multi-class Classification, Transfer Learning, Fine-tunning, EfficientNet. 
+**Key Concepts:** Deep Learning, Convolutional Neural Networks, Computer Vision, Multi-class Classification, Transfer Learning, Feature Extraction, Fine-tunning, EfficientNet. 
 
 ## Data loading and preparation:
 After downloading and unzipping the dataset. I prepared the data for training by:
