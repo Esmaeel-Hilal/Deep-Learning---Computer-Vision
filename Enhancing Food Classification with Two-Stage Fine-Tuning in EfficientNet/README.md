@@ -1,8 +1,8 @@
-# Enhancing Food Classification with Two-Stage Fine-Tuning in EfficientNet
+# Enhancing Food Classification with Two-Stage Transfer Learning Using EfficientNet
 I have finished this project as part of my journey to pursue my passion for AI. This project is the first milestone project in the “TensorFlow for Deep Learning Bootcamp” course on Udemy. While the course instructor offered guidance, I completed the project independently.
 
 The goal was to train a multiclass classification model that surpasses the Deepfood model. The Deepfood model used a convolutional neural network trained for **2-3 days and achieved a top-1 accuracy of 77.4%** on the food101 dataset.
-To achieve this goal, I used EfficientNet (B0 version) as the backbone model, incorporated a global average pooling layer, batch normalization, and a dropout layer. I trained the model in two phases as described in the “Two-Stage Fine-Tuning” section and achieved a **top-1 accuracy of 80.66%**. The training process took approximately **6 hours and 30 minutes**. 
+To achieve this goal, I used EfficientNet (B0 version) as the backbone model, added a global average pooling layer, batch normalization, and a dropout layer. I trained the model in two phases as described in the “Two-Stage Transfer Learning” section and achieved a **top-1 accuracy of 80.66%**. The training process took approximately **6 hours and 30 minutes**. 
 
 The training was completed on my personal laptop, which is equipped with an Nvidia 1050 GTX.
 
@@ -20,32 +20,32 @@ After downloading and unzipping the dataset. I prepared the data for training by
 
 Note: These steps can be accomplished using a single method in the TensorFlow framework.
 
-## Two-Stage Fine-Tuning:
-In this project, fine-tuning was applied to enhance the model's performance, following a two-stage approach.
+## Two-Stage Transfer Learning:
+In this project, transfer learning was applied to enhance the model's performance, following a two-stage approach.
 
-The fine-tuning was performed in two steps: 
-1. Freezing the backbone model and training the entire model for 15 epochs.
-2. Unfreezing the backbone and continuing training for 10 more epochs, following the approach proposed in the ULMFit paper.
+The Transfer Learning was performed in two steps: 
+1. Feature Extraction: by freezing the backbone model and training the entire model for 15 epochs.
+2. Fine-Tunning: by unfreezing the backbone and continuing training for 10 more epochs, following the approach proposed in the ULMFit paper.
 
 Note:
 Based on a Keras tutorial on Image Classification via Fine-Tuning with EfficientNet (link provided in the resources section):
-- The BatchNormalization layers must remain frozen during unfreezing. If set to trainable, the accuracy of the first epoch after unfreezing will drop significantly.
-- Each block must be turned on or off in its entirety because the architecture includes a shortcut from the first layer to the last in each block. Disabling parts of a block can significantly degrade the model's performance.
+- **The BatchNormalization layers must remain frozen during unfreezing**. If set to trainable, the accuracy of the first epoch after unfreezing will drop significantly.
+- **Each block must be turned on or off in its entirety** because the architecture includes a shortcut from the first layer to the last in each block. Disabling parts of a block can significantly degrade the model's performance.
 
-This adjustment was crucial. After applying these guidelines, my model surpassed the performance of the DeepFood model. Prior to following this note, the model couldn’t exceed 76% accuracy.
+This adjustment was crucial. After applying these guidelines, my model surpassed the performance of the DeepFood model. Prior to following this note, **the model couldn’t exceed 76% accuracy**.
 
-### Stage 1 – feature extraction:  
+### Stage 1 – Feature Extraction:  
 - EfficientNetB0 was utilized as a feature extraction layer by excluding its top layer and freezing all the other layers to prevent weight modification.
 - A dense layer with 101 neurons and a "softmax" activation function was used as the output layer.
 - The model was saved using the checkpoint callback for future fine-tuning or model restoration.
 
-After training the model for only 15 epochs, which took about 2 hours, the model achieved an accuracy of 73.73% on the test set. 
+After training the model for only 15 epochs, which took about 2 hours, the model achieved **an accuracy of 73.73%** on the test set. 
 
-### Stage 2 – transfer learning – fine-tuning:
+### Stage 2 – Fine-tuning:
 EfficientNetB0's layers were unfrozen for fine-tuning (except the BatchNormalization layers). 
 
 After training the model for another 10 epochs, it took approximately 4 hours and 30 minutes. 
-The model achieved an accuracy of 80.66% on the test set, surpassing the Deepfood model’s accuracy. 
+The model achieved **an accuracy of 80.66% on the test set**, surpassing the Deepfood model’s accuracy. 
 
 **Mission accomplished!**
 
