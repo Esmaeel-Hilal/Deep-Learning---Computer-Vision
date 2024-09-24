@@ -2,9 +2,9 @@
 I have finished this project as part of my journey to pursue my passion for AI. This project is the first milestone project in the “TensorFlow for Deep Learning Bootcamp” course on Udemy. While the course instructor offered guidance, I completed the project independently.
 
 The goal was to train a multiclass classification model that surpasses the Deepfood model. The Deepfood model used a convolutional neural network trained for **2-3 days and achieved a top-1 accuracy of 77.4%** on the food101 dataset.
-To achieve this goal, I used EfficientNet (B0 version) as the backbone model, added a global average pooling layer, batch normalization, and a dropout layer. I trained the model in two phases as described in the “Two-Stage Transfer Learning” section and achieved a **top-1 accuracy of 80.66%**. The training process took approximately **6 hours and 30 minutes**. 
+To achieve this goal, I used EfficientNet (B0 version) as the backbone model, added a global average pooling layer, batch normalization, and a dropout layer. I trained the model in two phases as described in the “Two-Stage Transfer Learning” section and achieved a **top-1 accuracy of 80.66%**. **The current state-of-the-art accuracy is 83.35%**, This is a close result compared to **the current state-of-the-art accuracy of 83.35%.** (For reference to the state-of-the-art results, please see the paper listed as resource number 6 in the 'Resources' section).  
 
-The training was completed on my personal laptop, which is equipped with an Nvidia 1050 GTX.
+The training process took approximately **6 hours and 30 minutes** and it was completed on my personal laptop, which is equipped with an Nvidia 1050 GTX.
 
 I deployed the project using **Flask Web Framework**. (A link for the deployment tutorial is provided in the resources section)
 
@@ -60,12 +60,12 @@ After conducting further analysis, I identified the classes that were classified
 
 In conclusion, despite being trained for a significantly shorter time than the Deepfood model, my model produced better results. This serves as further evidence of the rapid evolution of deep learning, both in software and the hardware necessary for training. The Deepfood model was developed in 2016, while EfficientNetBX, the primary component of my model, was developed in 2020. The four-year gap between the development of these models played a significant role in the final results. Additionally, hardware advancements contributed to faster training. The total training time for my model took 6 hours and 30 minutes, compared to the 2-3 days required for training the Deepfood model.
 
-## Useful links:
-- Food101 dataset: [Food 101] (https://www.kaggle.com/datasets/dansbecker/food-101) 
-- EfficientNet paper: [EfficientNet: Rethinking Model Scaling for Convolutional Neural Networks](https://arxiv.org/abs/1905.11946)
-- Deepfood paper: [DeepFood: Deep Learning-Based Food Image Recognition for Computer-Aided Dietary Assessment](https://arxiv.org/abs/1606.05675)
-- ULMFit approach: [Universal Language Model Fine-tuning for Text Classification](https://arxiv.org/abs/1801.06146)
-- TensorFlow for Deep Learning Bootcamp Course: [TensorFlow for Deep Learning Bootcamp | Udemy](https://www.udemy.com/course/tensorflow-developer-certificate-machine-learning-zero-to-mastery/?couponCode=24T6MT62024)
-- Deployment Tutorial: [Deploy Machine Learning Models using Flask](https://youtu.be/0nr6TPKlrN0?si=sXaa2Unorxr_wZ89)
-- [Image classification via fine-tuning with EfficientNet](https://keras.io/examples/vision/image_classification_efficientnet_fine_tuning/)
- 
+## Resources:
+1. Food101 dataset: [Food 101] (https://www.kaggle.com/datasets/dansbecker/food-101) 
+2. EfficientNet paper: [EfficientNet: Rethinking Model Scaling for Convolutional Neural Networks](https://arxiv.org/abs/1905.11946)
+3. Deepfood paper: [DeepFood: Deep Learning-Based Food Image Recognition for Computer-Aided Dietary Assessment](https://arxiv.org/abs/1606.05675)
+4. ULMFit approach: [Universal Language Model Fine-tuning for Text Classification](https://arxiv.org/abs/1801.06146)
+5. TensorFlow for Deep Learning Bootcamp Course: [TensorFlow for Deep Learning Bootcamp | Udemy](https://www.udemy.com/course/tensorflow-developer-certificate-machine-learning-zero-to-mastery/?couponCode=24T6MT62024)
+6. Deployment Tutorial: [Deploy Machine Learning Models using Flask](https://youtu.be/0nr6TPKlrN0?si=sXaa2Unorxr_wZ89)
+7. [Image classification via fine-tuning with EfficientNet](https://keras.io/examples/vision/image_classification_efficientnet_fine_tuning/)
+8. [Optimizing Food101 Classification with Transfer Learning: A Fine-Tuning Approach Using EfficientNetB0](https://sciencepublishinggroup.com/article/10.11648/j.ijiis.20241304.11)
